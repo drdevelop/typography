@@ -1,0 +1,38 @@
+{
+  "name": "@typography-org/native",
+  "version": "1.0.0-beta.1",
+  "description": "A library for calculating text elision that mimics browser behavior",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/drdevelop/typography",
+  "scripts": {
+    "start": "dumi dev",
+    "dev": "dumi dev",
+    "build": "webpack",
+    "docs:build": "dumi build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cxd",
+  "devDependencies": {
+    "dumi": "^1.1.40",
+    "standard-version": "^9.3.2",
+    "terser-webpack-plugin": "^5.3.1",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "typography",
+    "paragraph",
+    "ellipsis",
+    "browser ellipsis",
+    "text calculate"
+  ],
+  "license": "MIT"
+}
