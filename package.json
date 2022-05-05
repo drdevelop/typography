@@ -1,4 +1,8 @@
 {
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "name": "typography",
   "version": "1.0.0",
   "description": "",
@@ -7,8 +11,12 @@
     "test": "test"
   },
   "scripts": {
+    "build": "lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "cxd",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
