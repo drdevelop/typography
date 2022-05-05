@@ -25,6 +25,9 @@ export default () => {
 }
 ```
 
+## Documentation
+See [https://drdevelop.github.io/typography/react/index.html](https://drdevelop.github.io/typography/react/index.html)
+
 ## Community
 ### Vue Components
 [@typography-org/vue](https://www.npmjs.com/package/@typography-org/vue)

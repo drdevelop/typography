@@ -14,7 +14,7 @@ const formatedText = formatWithEllipsis(props.children, {
   length: width * rows,
   lines: rows,
   fontSize: 14,
-  fontFamily: 'xxx',
+  fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol',
 });
 ```
 
@@ -27,12 +27,14 @@ const formatedText = formatWithEllipsis(props.children, {
   length: width * rows,
   lines: rows,
   fontSize: 14,
-  fontFamily: 'xxx',
+  fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol',
 }, {
   recognizeLineBreaks: true,
 });
 ```
 
+## Documentation
+See [https://drdevelop.github.io/typography/native](https://drdevelop.github.io/typography/native)
 ## Community
 ### Vue and React Components
 [@typography-org/react](https://www.npmjs.com/package/@typography-org/react)
