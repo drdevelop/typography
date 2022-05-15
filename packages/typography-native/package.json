@@ -1,6 +1,6 @@
 {
   "name": "@typography-org/native",
-  "version": "1.0.0-beta.6",
+  "version": "1.0.0-rc",
   "description": "A library for calculating text elision that mimics browser behavior",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -15,6 +15,9 @@
   },
   "author": "cxd",
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
     "dumi": "^1.1.40",
     "standard-version": "^9.3.2",
     "terser-webpack-plugin": "^5.3.1",
@@ -35,5 +38,6 @@
     "browser ellipsis",
     "text calculate"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
