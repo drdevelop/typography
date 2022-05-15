@@ -1,6 +1,6 @@
 {
   "name": "@typography-org/react",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.6",
   "description": "A react component library that calculates fonts according to browser behavior and omits expanding and collapsing",
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -1791,10 +1791,10 @@
   resolved "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
-"@typography-org/native@^1.0.0-alpha":
-  version "1.0.0-alpha"
-  resolved "https://registry.npmjs.org/@typography-org/native/-/native-1.0.0-alpha.tgz#e6cca4517bcacfd1936018740c75c4f3141158e5"
-  integrity sha512-czCWHmDDSDGZUOZjnS0XQzmg2aJ5mZC53OHYqnh6P6zoJB//qzStK3vt8xNxCZ+PZ2r0hr4H7B8X3QPgKWwfuQ==
+"@typography-org/native@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.npmjs.org/@typography-org/native/-/native-1.0.0-beta.4.tgz#ab9231de2b3ac92f7a38f429e7535b790bdf2223"
+  integrity sha512-KK07AnIAxrctaH0DoOVDO/iiZ7hIAWRgh70KDddiszIaqvQ+8jQ6q0Bt1mPLO53QdbDjdNsCcfEJOOCA43S9sA==
 
 "@umijs/ast@3.5.23":
   version "3.5.23"

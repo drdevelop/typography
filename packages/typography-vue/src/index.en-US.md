@@ -1,6 +1,6 @@
 ---
 map:
-  path: /guide/start
+  path: /
 ---
 
 ## Getting Started

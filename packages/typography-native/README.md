@@ -34,7 +34,7 @@ const formatedText = formatWithEllipsis(props.children, {
 ```
 
 ## Documentation
-See [https://drdevelop.github.io/typography/native](https://drdevelop.github.io/typography/native)
+See [https://drdevelop.github.io/typography/native/index.html](https://drdevelop.github.io/typography/native/index.html)
 ## Community
 ### Vue and React Components
 [@typography-org/react](https://www.npmjs.com/package/@typography-org/react)

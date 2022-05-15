@@ -31,6 +31,9 @@ export default {
 </script>
 ```
 
+## Documentation
+See [https://drdevelop.github.io/typography/vue/index.html](https://drdevelop.github.io/typography/vue/index.html)
+
 ## Community
 ### React Components
 [@typography-org/react](https://www.npmjs.com/package/@typography-org/react)

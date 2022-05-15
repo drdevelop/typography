@@ -2,7 +2,7 @@ const { getRouterConfig } = require('./router');
 const { kebabCase } = require('lodash');
 const { resolve } = require('path');
 
-const base = process.env.NODE_ENV === 'production' ? '/@typography/vue' : '';
+const base = process.env.NODE_ENV === 'production' ? '/typography/vue' : '';
 
 module.exports = {
   title: '@typography/vue',
@@ -11,7 +11,7 @@ module.exports = {
     '@typography/vue': resolve('./src/'),
   },
   base,
-  // outDir: '../dist',
+  outDir: '../docs-dist',
   themeConfig: {
     lang: 'en-US',
     lastUpdated: '最近更新',
@@ -28,9 +28,16 @@ module.exports = {
         selectText: 'Languages',
         nav: [
           { text: 'Guide', link: '/', activeMatch: '^/$|^/guide/' },
-          { text: 'Components', link: `/${kebabCase('components')}/paragraph/`, activeMatch: '^/$|^/components/' },
+          { text: 'Components', link: `/${kebabCase('components')}/paragraph/`, activeMatch: '^/components/' },
         ],
         sidebar: {
+          '/': [{
+            text: 'Getting Start',
+            link: '/guide/start',
+          }, {
+            text: 'changelog',
+            link: '/guide/changelog',
+          }],
           '/guide/': [{
             text: 'Getting Start',
             link: '/guide/start',
@@ -41,13 +48,6 @@ module.exports = {
           '/components/': [
             { text: 'paragraph', link: '/components/paragraph/' }
           ],
-          '/': [{
-            text: 'Getting Start',
-            link: '/guide/start',
-          }, {
-            text: 'changelog',
-            link: '/guide/changelog',
-          }],
         },
       },
       '/zh/': {
@@ -57,7 +57,7 @@ module.exports = {
         label: '中文',
         selectText: '语言',
         nav: [
-          { text: '指南', link: '/zh/guide/start', activeMatch: '^/zh/guide/' },
+          { text: '指南', link: '/zh/guide/start', activeMatch: '^/zh/$|^/zh/guide/' },
           { text: '组件', link: `/zh/${kebabCase('components')}/paragraph/`, activeMatch: '^/zh/components/' },
         ],
         sidebar: {
