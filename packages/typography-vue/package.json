@@ -1,6 +1,6 @@
 {
   "name": "@typography-org/vue",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0-beta.8",
   "description": "A vue component library that calculates fonts according to browser behavior and omits expanding and collapsing",
   "types": "dist/src/index.d.ts",
   "repository": "https://github.com/drdevelop/typography",
@@ -74,7 +74,7 @@
     "whatwg-fetch": "^3.5.0"
   },
   "dependencies": {
-    "@typography-org/native": "^1.0.0-beta.4",
+    "@typography-org/native": "^1.0.0-rc.0",
     "vue-demi": "^0.6.0"
   },
   "publishConfig": {
