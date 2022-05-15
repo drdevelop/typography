@@ -1,0 +1,25 @@
+import{_ as a,c as n,o as s,a as t}from"./app.db355a71.js";const p={components:{}},h='{"title":"\u4ECB\u7ECD","description":"","frontmatter":{"map":{"path":"/guide/start"}},"headers":[{"level":2,"title":"\u4ECB\u7ECD","slug":"\u4ECB\u7ECD"},{"level":2,"title":"\u7279\u70B9","slug":"\u7279\u70B9"},{"level":2,"title":"\u5B89\u88C5","slug":"\u5B89\u88C5"},{"level":2,"title":"\u4F7F\u7528","slug":"\u4F7F\u7528"}],"relativePath":"zh/guide/start.md","lastUpdated":1652623855438}',e=t(`__VP_STATIC_START__<h2 id="\u4ECB\u7ECD"><a class="header-anchor" href="#\u4ECB\u7ECD" aria-hidden="true">#</a> \u4ECB\u7ECD</h2><p>Typography\u7EC4\u4EF6 \u7684 vue \u5B9E\u73B0\u3002</p><h2 id="\u7279\u70B9"><a class="header-anchor" href="#\u7279\u70B9" aria-hidden="true">#</a> \u7279\u70B9</h2><ul><li>\u6613\u4E8E\u4F7F\u7528.</li><li>\u540C\u65F6\u9002\u7528\u4E8E Vue3 \u548C Vue2\u3002( \u611F\u8C22<a href="https://github.com/antfu/vue-demi" target="_blank" rel="noopener noreferrer">vue-demi</a> ).</li><li>\u7531 TS \u7F16\u5199\uFF0C\u5B8C\u6574\u7684\u7C7B\u578B\u63A8\u5BFC.</li></ul><h2 id="\u5B89\u88C5"><a class="header-anchor" href="#\u5B89\u88C5" aria-hidden="true">#</a> \u5B89\u88C5</h2><div class="language-"><pre><code>yarn add @typography/vue -S
+</code></pre></div><h2 id="\u4F7F\u7528"><a class="header-anchor" href="#\u4F7F\u7528" aria-hidden="true">#</a> \u4F7F\u7528</h2><div class="language-vue"><pre><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ width: <span class="token punctuation">&#39;</span>300px<span class="token punctuation">&#39;</span>, border: <span class="token punctuation">&#39;</span>1px solid red<span class="token punctuation">&#39;</span>, boxSizing: <span class="token punctuation">&#39;</span>initial<span class="token punctuation">&#39;</span> }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Paragraph</span>
+      <span class="token attr-name">:ellipsis</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{
+        expandable: true,
+        packupable: true,
+        rows: 2,
+      }<span class="token punctuation">&quot;</span></span>
+    <span class="token punctuation">&gt;</span></span>
+      \u6211\u53EF\u80FD\u662F\u5C55\u793A\u5728\u8FD9\u4E2A\u6587\u672C\u6846\u4E2D\u7684\u7B2C\u4E00\u884C\u6570\u636E\u563F\uFF0C\u6211\u53EF\u80FD\u662F\u5C55\u793A\u5728\u8FD9\u4E2A\u6587\u672C\u6846\u4E2D\u7684\u7B2C\u4E8C\u884C\u6570\u636E\uFF0C\u6211\u53EF\u80FD\u662F\u5C55\u793A\u5728\u8FD9\u4E2A\u6587\u672C\u6846\u4E2D\u7684\u7B2C\u4E09\u884C\u6570\u636E
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>Paragraph</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>ts<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">import</span> Paragraph <span class="token keyword">from</span> <span class="token string">&quot;../index.vue&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    Paragraph<span class="token operator">:</span> Paragraph<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>\u66F4\u591A\u7528\u6CD5, \u8BE6\u89C1 <a href="/zh/components/paragraph/">Component-Paragraph</a></p>__VP_STATIC_END__`,9),o=[e];function c(l,u,r,i,k,d){return s(),n("div",null,o)}var _=a(p,[["render",c]]);export{h as __pageData,_ as default};
