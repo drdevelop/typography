@@ -10,9 +10,9 @@
   "bugs": "https://github.com/drdevelop/typography/issues",
   "scripts": {
     "start": "dumi dev",
-    "dev": "dumi dev",
+    "dev": "WATCH=none dumi dev",
     "build": "father-build",
-    "docs:build": "dumi build",
+    "docs:build": "publicPath=1 dumi build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "cxd",
@@ -24,7 +24,8 @@
     "react": "^18.1.0",
     "react-markdown": "^8.0.3",
     "standard-version": "^9.3.2",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "workbox-webpack-plugin": "^6.5.3"
   },
   "dependencies": {
     "@typography-org/native": "^1.0.0-rc.0"

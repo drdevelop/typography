@@ -1,4 +1,6 @@
 import { defineConfig, IConfig } from 'dumi';
+import { GenerateSW } from 'workbox-webpack-plugin';
+import config from './config/config';
 
 export default defineConfig({
   title: '@typography/native',
@@ -9,9 +11,27 @@ export default defineConfig({
     ['zh-CN', '中文'],
     ['en', 'English'],
   ],
+  outputPath: 'docs-dist',
   // mfsu: true,
-  publicPath: process.env.NODE_ENV === 'development' ? '/' : '//drdevelop.github.io/typography/native/',
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : config.publicPath,
   history: {
     type: 'hash',
-  }
+  },
+  chainWebpack(memo) {
+    memo.plugin('workbox-webpack-plugin')
+      .use(
+        GenerateSW,
+        [{
+          clientsClaim: true,
+          skipWaiting: true,
+          maximumFileSizeToCacheInBytes: 1024 * 1024 * 5,
+          cleanupOutdatedCaches: true,
+          exclude: [/\.map$/, /^manifest.*\.js$/, /\.html$/],
+          runtimeCaching: [{
+            urlPattern: /.*\.html/,
+            handler: 'NetworkFirst',
+          }],
+        }]
+      );
+  },
 } as IConfig)
