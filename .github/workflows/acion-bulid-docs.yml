@@ -1,0 +1,47 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - test/actions
+jobs:
+  build-and-deploy-native:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    
+    - name: Build
+      run: cd packages/typography-native && yarn && npm run docs-build
+
+    - name: Move File
+      run: mkdir docs && mv packages/typography-native/docs-dist docs/native
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: test/docs
+        FOLDER: docs
+
+  build-and-deploy-react:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    
+    - name: Build
+      run: cd packages/typography-react && yarn && npm run docs:build
+
+    - name: Move File
+      run: mkdir docs && mv packages/typography-react/docs-dist docs/react
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: test/docs
+        FOLDER: docs
