@@ -13,7 +13,7 @@ jobs:
         persist-credentials: false
     
     - name: Build
-      run: cd packages/typography-native && yarn && npm run docs-build
+      run: cd packages/typography-native && yarn && npm run docs:build
 
     - name: Move File
       run: mkdir docs && mv packages/typography-native/docs-dist docs/native
