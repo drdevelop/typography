@@ -27,6 +27,12 @@ jobs:
     - name: Move react docs
       run: mv packages/typography-react/docs-dist docs/react
 
+    - name: Build vue docs
+      run: cd packages/typography-vue && yarn && npm run docs:build
+
+    - name: Move vue docs
+      run: mv packages/typography-vue/docs-dist docs/vue
+
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
