@@ -1,6 +1,6 @@
 {
   "name": "@typography-org/native",
-  "version": "1.0.0-rc.0",
+  "version": "1.0.0-rc.1",
   "description": "A library for calculating text elision that mimics browser behavior",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

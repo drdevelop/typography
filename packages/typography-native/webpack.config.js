@@ -17,8 +17,7 @@ module.exports = {
   entry: './src/index.ts',
   output: {
     filename: 'index.js',
-    library: '@typography-org/native',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [{
