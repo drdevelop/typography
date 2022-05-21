@@ -22,7 +22,7 @@ yarn add @typography-org/react -S
 
 ## 使用
 
-```tsx
+```tsx | pure
 import React from 'react';
 import { Paragraph } from '@typography-org/react';
 
