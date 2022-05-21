@@ -1,4 +1,4 @@
-import formatWithEllipsis from "@typography-org/native";
+import * as formatWithEllipsis from "@typography-org/native";
 
 export default {
   props: ["ellipsis"],
@@ -51,7 +51,7 @@ export default {
           const fontFamily = getComputedStyle(dom).fontFamily;
           const suffixWidth = vm.suffixWidth;
           const text = vm.$slots.default()[0].children?.trim();
-          const calc = (formatWithEllipsis as any).default || formatWithEllipsis;
+          const calc = formatWithEllipsis.default;
           const newDisplayText = calc(
             text,
             {

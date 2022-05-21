@@ -954,10 +954,10 @@
     "@typescript-eslint/types" "4.14.1"
     eslint-visitor-keys "^2.0.0"
 
-"@typography-org/native@^1.0.0-rc.0":
-  version "1.0.0-rc.0"
-  resolved "https://registry.npmjs.org/@typography-org/native/-/native-1.0.0-rc.0.tgz#4e422087701436f9a56d7b2a4efa10afa7d37c14"
-  integrity sha512-28i6u3yt31QC5zo+fvPvCZ1yJ+i+cQN4neplJMOZ23LLlKTp0naQNyXgpVuuEAvR5MXjaU7Z5hJ7LSxCgl4dLA==
+"@typography-org/native@^1.0.0-rc.1":
+  version "1.0.0-rc.1"
+  resolved "https://registry.npmjs.org/@typography-org/native/-/native-1.0.0-rc.1.tgz#b225f88057ec17da2ada352630ac11fa6f4a3696"
+  integrity sha512-tG0m0WTKZ+l81pL52BB6tRmCP9ENz/gu6zhIcyjXiAOKAl9ll2rYyWtwWMEPc8zoB8ka+d5rseqWF7fQqp2++w==
 
 "@vitejs/plugin-vue@^2.1.0":
   version "2.1.0"
