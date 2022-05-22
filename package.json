@@ -11,7 +11,7 @@
     "build": "lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pub": "lerna exec -- npm publish",
-    "release": "lerna version --conventional-commits && npm run pub"
+    "release": "lerna version --conventional-commits"
   },
   "author": "cxd",
   "license": "ISC",
