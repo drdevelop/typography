@@ -1,7 +1,8 @@
 ---
 order: 1
+title: Change Log
 nav:
   title: guide
 ---
 
-# ChangeLog
+<embed src="../../CHANGELOG.md"></embed>
