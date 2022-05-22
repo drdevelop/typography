@@ -12,9 +12,6 @@ jobs:
       uses: nanasess/setup-chromedriver@v1
       with:
         persist-credentials: false
-      run: |
-        export DISPLAY=:99
-        chromedriver --url-base=/wd/hub &
 
     - name: create docs dir
       run: mkdir docs
