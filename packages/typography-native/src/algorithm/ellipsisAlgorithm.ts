@@ -4,7 +4,7 @@ interface Style {
   length: number;
   lines: number;
   fontSize: number;
-  ellipsisWidth: number;
+  ellipsisWidth?: number;
   fontFamily: string;
 }
 

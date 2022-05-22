@@ -26,6 +26,11 @@ module.exports = {
         'babel-loader',
         'ts-loader'
       ],
+    }, {
+      test: /.js$/,
+      use: [
+        'babel-loader',
+      ],
     }]
   },
   resolve: {
