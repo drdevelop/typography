@@ -1835,10 +1835,10 @@
   resolved "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
-"@typography-org/native@^1.0.0-rc.0":
-  version "1.0.0-rc.0"
-  resolved "https://registry.npmjs.org/@typography-org/native/-/native-1.0.0-rc.0.tgz#4e422087701436f9a56d7b2a4efa10afa7d37c14"
-  integrity sha512-28i6u3yt31QC5zo+fvPvCZ1yJ+i+cQN4neplJMOZ23LLlKTp0naQNyXgpVuuEAvR5MXjaU7Z5hJ7LSxCgl4dLA==
+"@typography-org/native@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@typography-org/native/-/native-1.0.0.tgz#ad3d3f9f2a6b006cbc12e091438453174664b08e"
+  integrity sha512-Pin+e7y9KKLao5CViasNcmdbpc0bEjO83HHdnIRaqPwn9mHF8tGvVFTf1iR6tdQOOzVU1Wa2T8P69v+M+vqudg==
 
 "@umijs/ast@3.5.23":
   version "3.5.23"
