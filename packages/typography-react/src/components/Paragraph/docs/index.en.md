@@ -12,6 +12,36 @@ text ellipsis, expand and packup...
 
 ## Examples
 
+### normal multiple lines ellipsis
+```tsx
+/**
+ * desc: use`ellipsis.expandable:true`to control how many lines are beyond omitted
+ */
+import React, { useState } from 'react';
+import { Paragraph } from '@typography-org/react';
+import { Drawer } from 'antd';
+
+export default (props) => {
+  const [visible, setVisible] = useState<boolean>(false);
+  const onVisibleChange = (show: boolean) => {
+    setVisible(show);
+  }
+  return (
+    <>
+    <div style={{ width: 300, fontSize: 14, border: '1px solid orange', boxSizing: 'initial'}}>
+      <Paragraph
+        ellipsis={{
+          rows: 2,
+        }}
+      >
+        I may be the first row of data displayed in this text box hey, I may be the second row of data displayed in this text box, I may be the third row of data displayed in this text box
+      </Paragraph>
+    </div>
+    </>
+  )
+}
+```
+
 ### add the ability of expand
 ```tsx
 /**

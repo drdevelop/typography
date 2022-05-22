@@ -12,6 +12,36 @@ nav:
 
 ## 代码演示
 
+### 正常多行省略
+```tsx
+/**
+ * desc: 设置`ellipsis.rows`控制多少行超出省略
+ */
+import React, { useState } from 'react';
+import { Paragraph } from '@typography-org/react';
+import { Drawer } from 'antd';
+
+export default (props) => {
+  const [visible, setVisible] = useState<boolean>(false);
+  const onVisibleChange = (show: boolean) => {
+    setVisible(show);
+  }
+  return (
+    <>
+    <div style={{ width: 300, fontSize: 14, border: '1px solid orange', boxSizing: 'initial'}}>
+      <Paragraph
+        ellipsis={{
+          rows: 2,
+        }}
+      >
+        我可能是展示在这个文本框中的第一行数据嘿，我可能是展示在这个文本框中的第二行数据，我可能是展示在这个文本框中的第三行数据
+      </Paragraph>
+    </div>
+    </>
+  )
+}
+```
+
 ### 添加展开功能
 ```tsx
 /**

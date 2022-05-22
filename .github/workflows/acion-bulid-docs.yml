@@ -1,0 +1,41 @@
+name: GitHub Actions Build and Deploy Demo
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+
+    - name: create docs dir
+      run: mkdir docs
+
+    - name: Build native docs
+      run: cd packages/typography-native && yarn && npm run docs:build
+
+    - name: Move native docs
+      run: mv packages/typography-native/docs-dist docs/native
+
+    - name: Build react docs
+      run: cd packages/typography-react && yarn && npm run docs:build
+
+    - name: Move react docs
+      run: mv packages/typography-react/docs-dist docs/react
+
+    - name: Build vue docs
+      run: cd packages/typography-vue && yarn && npm run docs:build
+
+    - name: Move vue docs
+      run: mv packages/typography-vue/docs-dist docs/vue
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: docs
