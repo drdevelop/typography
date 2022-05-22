@@ -11,8 +11,8 @@
     "dev": "dumi dev",
     "build": "webpack",
     "docs:build": "dumi build",
-    "test": "karma start",
-    "coverage": "BABEL_ENV=test karma start"
+    "prepublishOnly": "npm run test",
+    "test": "BABEL_ENV=test karma start"
   },
   "author": "cxd",
   "devDependencies": {
