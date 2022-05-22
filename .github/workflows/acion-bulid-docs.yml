@@ -7,11 +7,10 @@ jobs:
   build-and-deploy-docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: browser-actions/setup-chrome@latest
+    - name: Checkout
+      uses: actions/checkout@v2
       with:
-        chrome-version: beta
-    - run: chrome --version
+        persist-credentials: false
 
     - name: create docs dir
       run: mkdir docs
