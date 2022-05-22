@@ -16,7 +16,7 @@ jobs:
       run: mkdir docs
 
     - name: Build native docs
-      run: cd packages/typography-native && yarn && npm run test && npm run docs:build
+      run: cd packages/typography-native && yarn && npm run docs:build
 
     - name: Move native docs
       run: mv packages/typography-native/docs-dist docs/native
