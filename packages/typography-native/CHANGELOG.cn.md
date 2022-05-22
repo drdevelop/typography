@@ -15,7 +15,3 @@
 ### Bug Fixes
 
 * 兼容移动端低版本浏览器 ([d879752](https://github.com/drdevelop/typography/commit/d8797529d72deca804c288946530e40a559a5a50))
-
-# 1.0.0-beta.4 (2022-05-05)
-
-**Note:** 版本提升仅适用于包 @typography-org/native
