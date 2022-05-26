@@ -1,3 +1,5 @@
+const { ModuleFederationPlugin } = require('webpack').container;
+
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const env = process.env.NODE_ENV;
@@ -9,11 +11,23 @@ const plugins = [
         drop_console: true,
       }
     }
-  })
+  }),
 ];
 
+if (env === 'development') {
+  plugins.push(
+    new ModuleFederationPlugin({
+      name: 'typography_org',
+      filename: 'remoteEntry.js',
+      exposes: {
+        '.': './src/index.ts',
+      }
+    })
+  )
+}
+
 module.exports = {
-  mode: 'production',
+  mode: env,
   entry: './src/index.ts',
   output: {
     filename: 'index.js',

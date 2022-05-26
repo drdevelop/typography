@@ -1,17 +1,19 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+// http://localhost:8001
+// import ReactMarkdown from 'react-markdown';
 
 function parse(text?: string) {
   if (!text) return;
-  return (
-    <ReactMarkdown
-      renderers={{
-        paragraph: 'span',
-      }}
-    >
-      {text}
-    </ReactMarkdown>
-  )
+  return text;
+  // return (
+  //   <ReactMarkdown
+  //     renderers={{
+  //       paragraph: 'span',
+  //     }}
+  //   >
+  //     {text}
+  //   </ReactMarkdown>
+  // )
 }
 
 export default parse;
