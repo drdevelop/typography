@@ -6,7 +6,7 @@ const base = process.env.NODE_ENV === 'production' ? '/typography/vue' : '';
 
 module.exports = {
   title: '@typography/vue',
-  description: 'typography vue components',
+  description: '一款简单易用的省略展开收起react组件，计算精准度极高A vue component library that calculates fonts according to browser behavior and omits expanding and collapsing',
   alias: {
     '@typography/vue': resolve('./src/'),
   },
