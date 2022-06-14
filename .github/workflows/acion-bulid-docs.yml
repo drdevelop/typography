@@ -22,7 +22,7 @@ jobs:
       run: mv packages/typography-native/docs-dist docs/native
 
     - name: Build react docs
-      run: cd packages/typography-react && yarn && npm run docs:build
+      run: cd packages/typography-react && yarn && APP_ID=${{ secrets.APP_ID }} API_KEY=${{ secrets.API_KEY }} npm run docs:build
 
     - name: Move react docs
       run: mv packages/typography-react/docs-dist docs/react
