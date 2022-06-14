@@ -12,6 +12,7 @@ export default defineConfig({
     apiKey: process.env.API_KEY,
     indexName: 'test',
   },
+  sitemap: { hostname: 'drdevelop.github.io' },
   metas: [
     {
       name: 'keywords',
