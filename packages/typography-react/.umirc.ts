@@ -1,6 +1,7 @@
 import { defineConfig, IConfig } from 'dumi';
 import { GenerateSW } from 'workbox-webpack-plugin';
 import config from './config/config';
+import path from 'path';
 
 export default defineConfig({
   title: '@typography-org/react',
@@ -12,7 +13,7 @@ export default defineConfig({
     apiKey: process.env.API_KEY,
     indexName: 'test',
   },
-  sitemap: { hostname: 'https://drdevelop.github.io' },
+  sitemapPlus: { hostname: 'https://drdevelop.github.io', prefix: config.publicPath },
   metas: [
     {
       name: 'keywords',
@@ -26,6 +27,9 @@ export default defineConfig({
   locales: [
     ['zh-CN', '中文'],
     ['en', 'English'],
+  ],
+  plugins: [
+    path.join(__dirname, './.dumi/plugins/sitemapPlus.ts'),
   ],
   extraBabelPlugins: [
     [
